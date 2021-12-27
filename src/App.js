@@ -9,13 +9,26 @@ import './css/animations-delay.css'
 import './css/style.min.css'
 import './css/colors/default.css'
 import Home from './components/Home'
+import Dashboard from './components/Dashboard'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Switch,
+} from 'react-router-dom'
+
 import Loader from './components/Loader'
 
 function App() {
   return (
     <div className="App">
-      <Loader isLoading={false} />
-      <Home />
+      {/* <Loader isLoading={false} /> */}
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/dash" element={<Dashboard />} />
+        </Routes>
+      </Router>
     </div>
   )
 }
