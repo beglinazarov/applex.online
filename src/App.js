@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import './css/bootstrap.min.css'
+import './css/materialdesignicons.min.css'
+// import './css/line.css'
+import './css/tobii.min.css'
+import './css/tiny-slider.css'
+import './css/animate.css'
+import './css/animations-delay.css'
+import './css/style.min.css'
+import './css/colors/default.css'
+import Home from './components/Home'
+import Loader from './components/Loader'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Loader isLoading={false} />
+      <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    container_name: rapp_container
+    image: app:react
+    build: 
+      context: .
+    ports: 
+      - 3000:3000
+    volumes:
+      - .:/applex
+    command: npm start
