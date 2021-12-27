@@ -1,5 +1,5 @@
 import React from 'react'
-import logoImgDark from '../images/logo-applex.png'
+import logoImgDark from '../images/logo-applex-dark.png'
 import logoImgLite from '../images/logo-applex-light.png'
 
 export default function HeaderCompontent() {
