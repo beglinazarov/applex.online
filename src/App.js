@@ -9,7 +9,7 @@ import './css/animations-delay.css'
 import './css/style.min.css'
 import './css/colors/default.css'
 import Home from './components/Home'
-import Dashboard from './components/Dashboard'
+import Dashboard from './components/dash/Dashboard'
 import {
   BrowserRouter as Router,
   Routes,

@@ -2,7 +2,7 @@ import React from 'react'
 import logoImgDark from '../images/logo-applex-dark.png'
 import logoImgLite from '../images/logo-applex-light.png'
 import Services from '../components/Services'
-import AdminDash from './Dashboard'
+import AdminDash from './dash/Dashboard'
 import { Link } from 'react-router-dom'
 
 export default function HeaderCompontent() {
