@@ -4,6 +4,7 @@ import logoImgLite from '../images/logo-applex-light.png'
 import Services from '../components/Services'
 import AdminDash from './dash/Dashboard'
 import { Link } from 'react-router-dom'
+import * as Icon from 'react-feather'
 
 export default function HeaderCompontent() {
   const toggleMenu = () => {}
@@ -60,12 +61,12 @@ export default function HeaderCompontent() {
               >
                 <div className="login-btn-primary">
                   <span className="btn btn-icon btn-pills btn-soft-primary">
-                    <i data-feather="settings" className="fea icon-sm"></i>
+                    <Icon.Settings />
                   </span>
                 </div>
                 <div className="login-btn-light">
                   <span className="btn btn-icon btn-pills btn-light">
-                    <i data-feather="settings" className="fea icon-sm"></i>
+                    <Icon.Settings />
                   </span>
                 </div>
               </a>
@@ -78,12 +79,12 @@ export default function HeaderCompontent() {
               >
                 <div className="login-btn-primary">
                   <span className="btn btn-icon btn-pills btn-primary">
-                    <i data-feather="shopping-cart" className="fea icon-sm"></i>
+                    <Icon.ShoppingCart />
                   </span>
                 </div>
                 <div className="login-btn-light">
                   <span className="btn btn-icon btn-pills btn-light">
-                    <i data-feather="shopping-cart" className="fea icon-sm"></i>
+                    <Icon.ShoppingCart />
                   </span>
                 </div>
               </a>
@@ -93,9 +94,11 @@ export default function HeaderCompontent() {
           <div id="navigation">
             <ul className="navigation-menu nav-light">
               <li>
-                <a href="/apps" className="sub-menu-item">
+                <Link to="apps" className="sub-menu-item">
                   App Gallery
-                </a>
+                </Link>
+                {/* <a href="/apps" >
+                </a> */}
               </li>
               {/* <Services /> */}
 

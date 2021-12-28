@@ -7,7 +7,7 @@ import imgInvest from '../images/insurance/investment.svg'
 import imgCarIns from '../images/insurance/car.svg'
 import imgBike from '../images/insurance/bike.svg'
 
-export default function AppContainer() {
+export default function AppsGallery() {
   return (
     <>
       <section

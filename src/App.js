@@ -10,7 +10,8 @@ import './css/style.min.css'
 import './css/colors/default.css'
 import Home from './components/Home'
 import Dashboard from './components/dash/Dashboard'
-import AppContainer from './components/AppContainer'
+import AppsGallery from './components/AppsGallery'
+import AppsContainer from './components/dash/AppsContainer'
 
 import {
   BrowserRouter as Router,
@@ -28,7 +29,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/apps" element={<AppContainer />} />
+          <Route path="/apps-gallery" element={<AppsGallery />} />
+
+          <Route path="/apps" element={<AppsContainer />} />
           <Route path="/dash" element={<Dashboard />} />
         </Routes>
       </Router>

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import logoImgDark from '../../images/logo-applex-dark.png'
 import logoImgLite from '../../images/logo-applex-light.png'
 export default function Navbar() {
@@ -28,14 +30,16 @@ export default function Navbar() {
 
         <ul className="sidebar-menu">
           <li>
-            <a href="index.html">
-              <i className="ti ti-home me-2"></i>Dashboard
-            </a>
+            <Link to="/dash">
+              <i className="ti ti-home me-2"></i>
+              Dashboard
+            </Link>
           </li>
           <li className="sidebar-dropdown">
-            <a href="\#">
-              <i className="ti ti-browser me-2"></i>Layouts
-            </a>
+            <Link to="#">
+              <i className="ti ti-browser me-2"></i>
+              Layouts
+            </Link>
             <div className="sidebar-submenu">
               <ul>
                 <li>
@@ -57,9 +61,9 @@ export default function Navbar() {
             </div>
           </li>
           <li className="sidebar-dropdown">
-            <a href="\#">
+            <Link to="/apps">
               <i className="ti ti-apps me-2"></i>Apps
-            </a>
+            </Link>
             <div className="sidebar-submenu">
               <ul>
                 <li>
