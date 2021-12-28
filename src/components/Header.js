@@ -93,8 +93,8 @@ export default function HeaderCompontent() {
           <div id="navigation">
             <ul className="navigation-menu nav-light">
               <li>
-                <a href="index.html" className="sub-menu-item">
-                  Lease Apps
+                <a href="/apps" className="sub-menu-item">
+                  App Gallery
                 </a>
               </li>
               {/* <Services /> */}
